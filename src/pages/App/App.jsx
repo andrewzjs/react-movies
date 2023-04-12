@@ -14,12 +14,10 @@ export default function App() {
     <main className="App">
       <NavBar />
       { user ? 
-      <>
         <Routes>
           <Route path="/orders/new" element={<NewOrderPage />} />
           <Route path="/orders" element={<OrderHistoryPage />} />
         </Routes> 
-      </>
         : 
         <AuthPage /> }
     </main>

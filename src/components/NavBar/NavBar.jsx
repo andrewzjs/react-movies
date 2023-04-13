@@ -10,7 +10,7 @@ export default function NavBar({user}) {
             { user ? 
             <p>Welcome, {user.name}!</p>
             :
-            <p>Welcome!</p> }
+            <p></p> }
         </nav>
     )
 }

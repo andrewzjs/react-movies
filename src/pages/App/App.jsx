@@ -21,7 +21,7 @@ export default function App() {
           <Route path="/actors" element={<ActorsListPage />} />
         </Routes> 
         : 
-        <LoginPage /> }
+        <LoginPage user={user} setUser={setUser} /> }
     </main>
   );
 } 

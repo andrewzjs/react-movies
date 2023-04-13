@@ -32,6 +32,8 @@ export default class SignUpForm extends Component {
         //update the 'user' state
     }
 
+    
+
     render() {
     const disable = this.state.password !== this.state.confirm;
     return (
@@ -46,7 +48,7 @@ export default class SignUpForm extends Component {
                 onChange={this.handleChange} 
                 required 
             />
-            <button type="submit" disabled={disable}>LOG IN</button>
+            <button onClick={this.handleChange} type="submit" disabled={disable}>LOG IN</button>
             </form>
         </div>
         <p className="error-message">&nbsp;{this.state.error}</p>
